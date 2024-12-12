@@ -18,6 +18,9 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+## Find catkin macros and libraries
+find_package(catkin REQUIRED)
+
 # Source
 set(lobot_SOURCE src/servo.c)
 if(UNIX)
